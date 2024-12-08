@@ -19,11 +19,11 @@ from numpy import dot
 from numpy.linalg import norm
 
 # 기존 환경변수 제거
-if 'OPENAI_API_KEY' in os.environ:
-    del os.environ['OPENAI_API_KEY']
+# if 'OPENAI_API_KEY' in os.environ:
+#     del os.environ['OPENAI_API_KEY']
 
-# .env 파일 로드
-load_dotenv(override=True)  # override=True로 설정
+# # .env 파일 로드
+# load_dotenv(override=True)  # override=True로 설정
 
 OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
 
